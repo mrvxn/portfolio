@@ -36,19 +36,21 @@
   const loader = $('.loader');
   const ready = () => { body.classList.remove('is-loading'); body.classList.add('is-ready'); };
   if (loader && !arriving && !reduced) {
-    const count = $('.loader__count'), bar = $('.loader__bar i');
+    const count = $('.loader__count'), bar = $('.loader__bar i'), status = $('.loader__label');
+    const steps = ['Initialisation…', 'Lecture des préférences…', 'Chargement des polices…', 'Chargement des calques…', 'Ouverture des affiches…', 'Ouverture des covers…', 'Création de l\'espace de travail…', 'Terminé'];
     let loaded = document.readyState === 'complete';
     addEventListener('load', () => loaded = true);
     const t0 = performance.now(); let p = 0;
     (function run(t) {
-      const target = clamp((t - t0) / 1700) * (loaded ? 1 : 0.9);
+      const target = clamp((t - t0) / 2600) * (loaded ? 1 : 0.9);
       p = Math.max(p, lerp(p, target, 0.12));
       const v = Math.round(p * 100);
-      count.textContent = String(v).padStart(3, '0');
+      count.textContent = String(v).padStart(3, '0') + ' %';
+      status.textContent = steps[Math.min(steps.length - 1, Math.floor(p * (steps.length - 1)))];
       bar.style.transform = `scaleX(${p})`;
-      if (v >= 100 || t - t0 > 6000) {
-        count.textContent = '100';
-        setTimeout(() => { loader.classList.add('done'); ready(); }, 260);
+      if (v >= 100 || t - t0 > 7000) {
+        count.textContent = '100 %'; status.textContent = steps[steps.length - 1];
+        setTimeout(() => { loader.classList.add('done'); ready(); }, 320);
         setTimeout(() => loader.remove(), 1500);
       } else requestAnimationFrame(run);
     })(t0);
