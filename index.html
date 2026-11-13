@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mrvxn.psd — Graphiste</title>
+<meta name="description" content="Portfolio de mrvxn.psd, graphiste : affiches, covers, logotypes et identité visuelle.">
+<link rel="icon" href="assets/logos/logo-noir.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+<!-- LOADER -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__top"><span>mrvxn.psd</span><span>(ouverture du fichier)</span><span>portfolio_2026.psd</span></div>
+  <div class="loader__mark"><img src="assets/logos/logo-noir.png" alt=""></div>
+  <div class="loader__bottom">
+    <span class="loader__label">Chargement des calques</span>
+    <span class="loader__bar"><i></i></span>
+    <span class="loader__count">000</span>
+  </div>
+</div>
+<div class="curtain" aria-hidden="true"></div>
+
+<!-- GRAIN + CURSOR -->
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a class="nav__brand" href="#top"><img src="assets/logos/logo-blanc.png" alt=""><span>mrvxn.psd</span></a>
+  <span class="nav__mid">(<span data-clock>00:00</span>) Graphiste</span>
+  <nav class="nav__links">
+    <a href="#affiches">Affiches</a>
+    <a href="#covers">Covers</a>
+    <a href="#logos">Logos</a>
+    <a href="archive.html" data-transition>Archive</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero__blobs" data-layer="blob" aria-hidden="true">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="22" result="b"/>
+        <feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 40 -18"/>
+      </filter>
+    </defs>
+    <g filter="url(#goo)" class="hero__blobs-g"></g>
+  </svg>
+
+  <div class="hero__meta hero__meta--tl rv">
+    <span>(01)</span>
+    <p>Graphiste —<br>affiches, covers,<br>logotypes &amp;<br>identité visuelle.</p>
+  </div>
+  <div class="hero__meta hero__meta--tr rv">
+    <p>Portfolio 2026<br>Sélection de travaux<br>récents, ©mrvxn.psd</p>
+  </div>
+
+  <div class="hero__badge" data-layer="logo" aria-hidden="true">
+    <svg viewBox="0 0 200 200" class="hero__badge-ring">
+      <defs><path id="ring" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs>
+      <text><textPath href="#ring">mrvxn.psd ✺ graphiste ✺ affiches ✺ covers ✺ logotypes ✺ </textPath></text>
+    </svg>
+    <img src="assets/logos/logo-noir.png" alt="">
+  </div>
+
+  <div class="hero__wordwrap">
+    <h1 class="hero__word" data-layer="typo" aria-label="mrvxn.psd"><span class="hero__word-in"></span></h1>
+    <div class="hero__word hero__word--top" data-layer="typo" aria-hidden="true"><span class="hero__word-in"></span></div>
+  </div>
+
+  <div class="layers" aria-label="Calques">
+    <div class="layers__head"><span>Calques</span><span>100%</span></div>
+    <button class="layers__row is-on" data-toggle="typo"><i class="eye"></i><b class="th th--t">T</b>mrvxn.psd</button>
+    <button class="layers__row is-on" data-toggle="blob"><i class="eye"></i><b class="th th--b"></b>Formes liquides</button>
+    <button class="layers__row is-on" data-toggle="logo"><i class="eye"></i><b class="th th--l"></b>Logo</button>
+    <button class="layers__row is-on" data-toggle="grain"><i class="eye"></i><b class="th th--g"></b>Grain</button>
+  </div>
+
+  <div class="hero__foot">
+    <span>(Scroll)</span>
+    <span class="hero__arrow">↓</span>
+    <span>Affiches / Covers / Logos / Archive</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Affiches <i>✺</i> Covers <i>✺</i> Logotypes <i>✺</i> Identité visuelle <i>✺</i> </span>
+    <span>Affiches <i>✺</i> Covers <i>✺</i> Logotypes <i>✺</i> Identité visuelle <i>✺</i> </span>
+  </div>
+</div>
+
+<!-- AFFICHES : bande horizontale -->
+<section class="strip" id="affiches">
+  <div class="strip__sticky">
+    <div class="strip__head">
+      <h2 class="title"><span class="title__n">(01)</span><span class="title__t" data-split>Affiches</span></h2>
+      <p class="mono strip__intro rv">Série de trois affiches —<br>sculptures et objets d'archives<br>scannés en 3D, puis décomposés.</p>
+      <span class="mono strip__count"><b data-strip-i>01</b> / <span data-strip-n>08</span></span>
+    </div>
+    <div class="strip__track">
+      <figure class="card card--p" data-zoom="assets/affiches/narasimha.jpg">
+        <figcaption><span>(01)</span>Narasimha<br>Affiche, 2026</figcaption>
+        <img src="assets/affiches/narasimha.jpg" alt="Affiche Narasimha" loading="lazy">
+      </figure>
+      <figure class="card card--l card--scan" data-zoom="assets/affiches/scan-narasimha.jpg">
+        <figcaption><span>(02)</span>Narasimha<br>Scan 3D, matière</figcaption>
+        <img src="assets/affiches/scan-narasimha.jpg" alt="Scan 3D du relief Narasimha" loading="lazy">
+      </figure>
+      <figure class="card card--p" data-zoom="assets/affiches/pan-ourson.jpg">
+        <figcaption><span>(03)</span>Pan &amp; ourson<br>Affiche, 2026</figcaption>
+        <img src="assets/affiches/pan-ourson.jpg" alt="Affiche Pan et ourson" loading="lazy">
+      </figure>
+      <figure class="card card--l card--scan" data-zoom="assets/affiches/scan-pan.jpg">
+        <figcaption><span>(04)</span>Pan &amp; ourson<br>Scan 3D, matière</figcaption>
+        <img src="assets/affiches/scan-pan.jpg" alt="Scan 3D de la sculpture Pan et ourson" loading="lazy">
+      </figure>
+      <figure class="card card--p" data-zoom="assets/affiches/saxilby.jpg">
+        <figcaption><span>(05)</span>Saxilby memorial helmet<br>Affiche, 2026</figcaption>
+        <img src="assets/affiches/saxilby.jpg" alt="Affiche Saxilby" loading="lazy">
+      </figure>
+      <figure class="card card--l card--scan" data-zoom="assets/affiches/scan-saxilby.jpg">
+        <figcaption><span>(06)</span>Saxilby<br>Scan 3D, matière</figcaption>
+        <img src="assets/affiches/scan-saxilby.jpg" alt="Scan 3D du casque de Saxilby" loading="lazy">
+      </figure>
+      <figure class="card card--l" data-zoom="assets/affiches/scan-narasimha-relief.jpg">
+        <figcaption><span>(07)</span>Narasimha<br>Relief, texture</figcaption>
+        <img src="assets/affiches/scan-narasimha-relief.jpg" alt="Relief Narasimha texturé" loading="lazy">
+      </figure>
+      <figure class="card card--l" data-zoom="assets/affiches/mockup.jpg">
+        <figcaption><span>(08)</span>La série<br>Mise en situation</figcaption>
+        <img src="assets/affiches/mockup.jpg" alt="Les trois affiches encadrées" loading="lazy">
+      </figure>
+    </div>
+    <div class="strip__foot mono"><span>mrvxn.psd</span><span>(Scroll →)</span><span>Clique pour agrandir</span></div>
+  </div>
+</section>
+
+<!-- SÉRIE : bloc rouge -->
+<section class="serie">
+  <div class="serie__l">
+    <h2 class="serie__title rv">Trois<br>affiches</h2>
+    <span class="serie__n rv">(3)</span>
+  </div>
+  <div class="serie__r">
+    <div class="serie__img clip" data-zoom="assets/affiches/mockup.jpg"><img src="assets/affiches/mockup.jpg" alt="Les trois affiches exposées" loading="lazy" data-parallax="0.12"></div>
+    <div class="serie__rows">
+      <div class="serie__row rv"><span>Sujets :</span><p>Narasimha, Pan &amp; ourson,<br>Saxilby memorial helmet</p></div>
+      <div class="serie__row rv"><span>Matière :</span><p>Scans 3D, typographie<br>manuscrite, trames &amp; glitch</p></div>
+      <div class="serie__row rv"><span>Format :</span><p>Affiches portrait,<br>série de trois</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERS : pile de boîtiers CD -->
+<section class="covers" id="covers">
+  <div class="covers__head">
+    <h2 class="title"><span class="title__n">(02)</span><span class="title__t" data-split>Covers</span></h2>
+    <p class="mono rv">Pochettes d'albums<br>et de singles, 2025 — 2026.</p>
+  </div>
+  <div class="covers__body">
+    <ol class="covers__list mono">
+      <li data-cd="0"><span>01</span><b>Dans ma tête</b><em>Lume</em></li>
+      <li data-cd="1"><span>02</span><b>Méritant</b><em>Omaai &amp; Leeyn</em></li>
+      <li data-cd="2"><span>03</span><b>Méritant</b><em>Omaai &amp; Leeyn</em></li>
+      <li data-cd="3"><span>04</span><b>Pleur su Moin</b><em>Leeyn &amp; Kento</em></li>
+      <li data-cd="4"><span>05</span><b>Dose d'esprit vol.2</b><em>Cover</em></li>
+      <li data-cd="5"><span>06</span><b>Dose d'esprit vol.2</b><em>Tracklist</em></li>
+    </ol>
+    <div class="cds">
+      <div class="cds__scene">
+        <div class="cd" data-zoom="assets/covers/cover-06.jpg"><img src="assets/covers/cover-06.jpg" alt="Cover Dans ma tête, Lume" loading="lazy"></div>
+        <div class="cd" data-zoom="assets/covers/deserving.jpg"><img src="assets/covers/deserving.jpg" alt="Cover Méritant" loading="lazy"></div>
+        <div class="cd" data-zoom="assets/covers/deserving-chaine.jpg"><img src="assets/covers/deserving-chaine.jpg" alt="Cover Méritant, version chaîne" loading="lazy"></div>
+        <div class="cd" data-zoom="assets/covers/pleur-su-moin.jpg"><img src="assets/covers/pleur-su-moin.jpg" alt="Cover Pleur su Moin" loading="lazy"></div>
+        <div class="cd" data-zoom="assets/covers/dose-desprit-vol2.jpg"><img src="assets/covers/dose-desprit-vol2.jpg" alt="Cover Dose d'esprit vol.2" loading="lazy"></div>
+        <div class="cd" data-zoom="assets/covers/dose-desprit-tracklist.jpg"><img src="assets/covers/dose-desprit-tracklist.jpg" alt="Tracklist Dose d'esprit vol.2" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGOS -->
+<section class="logos" id="logos">
+  <div class="logos__head">
+    <h2 class="title"><span class="title__n">(03)</span><span class="title__t" data-split>Logotypes</span></h2>
+    <p class="mono rv">Combava / Omaai —<br>recherches de logotypes<br>et monogramme.</p>
+  </div>
+  <div class="logos__grid">
+    <div class="logos__video clip">
+      <video src="assets/logos/combava-omaai.mp4" muted loop playsinline preload="metadata"></video>
+      <span class="mono logos__tag">(Clip) Combava × Omaai</span>
+    </div>
+    <div class="logos__sheet clip" data-zoom="assets/logos/combava-logos.jpg">
+      <img src="assets/logos/combava-logos.jpg" alt="Quatre logotypes Combava" loading="lazy">
+      <span class="mono logos__tag">(Planche) 4 pistes</span>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section class="about">
+  <span class="mono about__n">(04) À propos</span>
+  <p class="about__text" data-words>Derrière mrvxn.psd, il y a Marvyn, graphiste. Je traite l'image comme une matière : je scanne, je découpe, je superpose les calques jusqu'à ce que ça tienne. Affiches, covers, logotypes, identités visuelles — chaque projet part d'une idée simple et finit en fichier bien rangé.</p>
+  <div class="about__mark" aria-hidden="true"><img src="assets/logos/logo-noir.png" alt=""></div>
+</section>
+
+<!-- PORTE VERS L'ARCHIVE -->
+<a class="door" href="archive.html" data-transition data-cursor="Entrer">
+  <div class="door__bg"><img src="assets/archive/01-logo.jpg" alt="" loading="lazy"></div>
+  <div class="door__in">
+    <span class="mono">(05) Archive</span>
+    <h2 class="door__title">Archive<br><em>2023</em></h2>
+    <span class="mono door__cta">L'ancien portfolio, conservé tel quel <b>→</b></span>
+  </div>
+</a>
+
+</main>
+
+<!-- CONTACT / FOOTER -->
+<footer class="foot" id="contact">
+  <div class="foot__top">
+    <span class="mono">(06) Contact</span>
+    <p class="foot__lead">Un projet, une cover,<br>une affiche ?</p>
+    <div class="foot__links mono">
+      <a href="https://www.instagram.com/mrvxn.psd" target="_blank" rel="noopener" data-cursor="Ouvrir">Instagram — @mrvxn.psd <b>↗</b></a>
+      <a href="mailto:marvynsanchez@outlook.fr" data-cursor="Écrire">marvynsanchez@outlook.fr <b>↗</b></a>
+      <a href="https://wa.me/33767068982" target="_blank" rel="noopener" data-cursor="Écrire">WhatsApp — 07 67 06 89 82 <b>↗</b></a>
+    </div>
+  </div>
+  <div class="foot__word" aria-hidden="true"><span class="foot__word-in">mrvxn.psd</span></div>
+  <div class="foot__bar mono"><span>©2026 mrvxn.psd</span><a href="archive.html" data-transition>Archive 2023</a><a href="#top">(Haut ↑)</a></div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" aria-hidden="true"><img alt=""><span class="mono lb__close">(Fermer)</span></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
